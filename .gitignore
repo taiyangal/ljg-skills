@@ -1,0 +1,16 @@
+# 默认忽略所有
+*
+
+# 只跟踪 ljg-* 目录
+!ljg-*/
+!ljg-*/**
+
+# 排除构建产物
+node_modules/
+.DS_Store
+*.pyc
+__pycache__/
+
+# 保留根目录文件
+!.gitignore
+!README.md
