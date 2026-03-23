@@ -45,6 +45,13 @@ Assistant: [对"熵"进行八维解剖，生成 org-mode 报告]
 
 ### 5. 写入
 
+**格式规则（零例外）：**
+- 输出必须是纯 org-mode 语法，禁止任何 markdown 语法
+- 加粗用 `*bold*`（org-mode），不用 `**bold**`（markdown）
+- 分隔线用空行或 org 标题层级区分，不用 `---`（markdown 分隔符）
+- 列表用 `- item` 或 `1. item`，不用 markdown 的 `* item`（因为 `*` 在 org 中是标题）
+- 代码用 `~code~` 或 `=code=`，不用反引号
+
 整合为 org-mode，结构：
 
 ```org
