@@ -32,7 +32,7 @@ user_invocable: true
 直接用 yt-dlp 下载，无需先探测：
 
 ```bash
-yt-dlp -o "~/Downloads/%(uploader)s_%(id)s.%(ext)s" "URL"
+yt-dlp --write-subs --write-auto-subs --sub-langs zh-Hans,en --embed-subs -o "~/Downloads/%(uploader)s_%(id)s.%(ext)s" "URL"
 ```
 
 如果成功（视频推文），完成。跳到步骤 4 汇报结果。
@@ -73,7 +73,7 @@ curl -L -o ~/Downloads/tweet_ID_2.jpg "https://pbs.twimg.com/media/yyy?format=jp
 yt-dlp 报错含 `login` / `Sign in` / `age-restricted` 时，加 `--cookies-from-browser chrome`：
 
 ```bash
-yt-dlp --cookies-from-browser chrome -o "~/Downloads/%(uploader)s_%(id)s.%(ext)s" "URL"
+yt-dlp --cookies-from-browser chrome --write-subs --write-auto-subs --sub-langs zh-Hans,en --embed-subs -o "~/Downloads/%(uploader)s_%(id)s.%(ext)s" "URL"
 ```
 
 ### 推文无媒体
